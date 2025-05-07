@@ -69,9 +69,6 @@
 
 .float {
     
-    img {
-        margin: 10px;
-        float: left;
-    }
-    
+    margin: 10px;
+    float: right;
 }

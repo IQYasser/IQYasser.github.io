@@ -1,40 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Yasser Website </title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows:  auto auto auto auto;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        grid-template-areas:
+        "area1 area2 area2"
+        "area1 area2 area2"
+        "area3 area3 area3";
+
+    }
+
+    .grid-container>div {
+        background-color: lightgray;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px #CCC;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-price {
+        margin-right: 20px;
+    }
+
+    .buy-button {
+        background-color: rgb(33, 190, 221);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="header">
+            valkommen till shoppen
+        </div>
+        <div class="products">
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>A</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>B</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>C</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>D</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>D</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>D</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>D</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
+                <h3>D</h3>
+                <span class="product-price">149 kr</span>
+                <button class="buy-button">Köp</button>
+            </div>
+        </div>
 
 
-<body style="background-image: url(Images/Bphoto.jpg);" >
- 
-    <h1 style="color:rgb(70, 213, 196) ; text-shadow: 1px 1px 2px rgb(59, 110, 229), 0 0 25px blue, 0 0 5px darkblue;" >
-    This shit working !
-    </h1>
-    <p style="color:rgb(0, 255, 47);font-size:33px;"> Is it good ? </p>
-    <p style="color:rgb(0, 174, 255);font-size:33px;"> How it is looking ? </p>
-    <img src="Images/foto.jpg" alt="Error" class="specialimg" >
-    <br>
-    <a href="https://kungsangsgymnasiet.se/" target="_blank" > My school </a>  
-    <br>
-    <video width="320" height="240" controls>
-    <source src="https://cdn.pixabay.com/video/2022/01/02/103195-662114423_large.mp4" type="video/mp4">
-    </video>
-    <video width="320" height="240" controls>
-    <source src="Video/Video.mp4" type="video/mp4">
-    </video>
-    <br>
-    <audio controls>
-    <source src= "Audio/rain.mp3" type="audio/mpeg">
-    <br>
-    </audio>
-    <audio controls>
-    <source src= "Audio/audio.m4a" type="audio/mpeg">
-    </audio>
-    <br>
-    <iframe src="https://www.wikipedia.org/" height="480" width="500" title="Iframe Example" class="iframe"> </iframe>
 
+    </div>
 </body>
+
 </html>
