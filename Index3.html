@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ PC - Discounts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            background: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .brand {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .page-title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            padding: 15px 20px;
+            background: #f0f2f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .back-btn {
+            background: #1a237e;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .discount-grid {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .discount-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .image-placeholder {
+            height: 180px;
+            background: #f0f4f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 0.8rem;
+        }
+
+        .discount-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .discount-name {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e65100;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 0.9rem;
+            margin-right: 5px;
+        }
+
+
+        .footer {
+            background: rgb(0, 0, 0);
+            padding: 50px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .discount-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-placeholder {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="brand">IQ PC</div>
+            <div class="page-title">Discounts Page</div>
+        </div>
+
+        <div class="nav">
+            <button class="back-btn" onclick="document.location='http://127.0.0.1:5500/index.html'">
+                ← Go back
+            </button>
+
+            <button class="back-btn" onclick="document.location='http://127.0.0.1:5500/Index2.html'">
+                Special Offers
+            </button>
+        </div>
+
+        <div class="discount-grid">
+            <!-- Product 1 -->
+            <div class="discount-item">
+                <div class="image-placeholder"><img src="/images/images.jpg" alt="PC" class="product-image"></div>
+                <div class="discount-info">
+                    <div class="discount-name">Laptop</div>
+                    <div>
+                        <span class="original-price">15,999 kr</span>
+                        <span class="price">12,799 kr</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="discount-item">
+                <div class="image-placeholder"><img src="/images/Mont.jpg" alt="PC" class="product-image"></div>
+                <div class="discount-info">
+                    <div class="discount-name">Ultra HD Monitor</div>
+                    <div>
+                        <span class="original-price">4,299 kr</span>
+                        <span class="price">3,499 kr</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="discount-item">
+                <div class="image-placeholder"><img src="/images/Keyb.jpg" alt="PC" class="product-image"></div>
+                <div class="discount-info">
+                    <div class="discount-name">Wireless Keyboard</div>
+                    <div>
+                        <span class="original-price">899 kr</span>
+                        <span class="price">699 kr</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="discount-item">
+                <div class="image-placeholder"><img src="/images/Mous.jpg" alt="PC" class="product-image"></div>
+                <div class="discount-info">
+                    <div class="discount-name">Gaming Mouse</div>
+                    <div>
+                        <span class="original-price">599 kr</span>
+                        <span class="price">449 kr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 IQ PC All rights reserved. | High quality computers at the best prices</p>
+            <p style="margin-top: 10px;"> for PC enthusiasts</p> <i> Our dedicated support team is available to
+                assist you with any questions or issues you may have </i> <br>
+            <i>+1 (800) PC-SUPPORT support@iqpc.com</i>
+        </div>
+    </div>
+</body>
+
+</html>

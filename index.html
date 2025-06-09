@@ -4,124 +4,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IQ PC</title>
+    <style>
+        body {
+
+            margin: 0px;
+
+        }
+
+        .search-bar {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            grid-area: header;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto;
+            gap: 0px;
+            background-color: #ffffff;
+            padding: 0px;
+            grid-template-areas:
+
+                "search"
+                "header"
+                "buttons"
+                "products"
+                "support";
+
+
+
+
+            background-color: rgb(255, 255, 255);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .buttons {
+            grid-area: buttons;
+        }
+
+        .support {
+            grid-area: support;
+        }
+
+        .product-container {
+            background: linear-gradient(45deg, #ffffff, #ffffff);
+            width: 100%;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-sizing: border-box;
+            grid-area: products;
+        }
+
+        .product-card {
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #ffffff;
+            padding: 10px;
+            margin: 5px 50px;
+            width: 15%;
+        }
+
+        .product-image {
+            width: 100%;
+        }
+
+        .product-price {
+            margin-right: 20px;
+        }
+
+        .buy-button {
+            background-color: rgb(20, 192, 222);
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 15px;
+
+        }
+
+        .next-btn {
+            background: #1a237e;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .image-link {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            background-image: url(Images/HTML.png);
+        }
+
+        footer {
+            background: rgb(0, 0, 0);
+            padding: 50px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .imgcontainer {
+            text-align: right;
+            height: 300px;
+            grid-area: header;
+        }
+
+        .header {
+            background: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows:  auto auto auto auto;
-        gap: 10px;
-        background-color: rgb(255, 255, 255);
-        padding: 10px;
-        grid-template-areas:
-        "area1 area2 area2"
-        "area1 area2 area2"
-        "area3 area3 area3";
-
-    }
-
-    .grid-container>div {
-        background-color: lightgray;
-        padding: 10px;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .product-card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px #CCC;
-        padding: 10px;
-        width: 200px;
-    }
-
-    .product-image {
-        width: 100%;
-    }
-
-    .product-price {
-        margin-right: 20px;
-    }
-
-    .buy-button {
-        background-color: rgb(33, 190, 221);
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 8px;
-    }
-</style>
 
 <body>
-
     <div class="grid-container">
 
         <div class="header">
-            valkommen till shoppen
-        </div>
-        <div class="products">
 
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>A</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
+            <div class="search">
+
+                <input type="text" class="search-bar" placeholder="Search products...">
+
             </div>
 
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>B</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>C</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>D</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>D</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>D</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>D</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/images/HTML.png" alt="Golfboll" class="product-image">
-                <h3>D</h3>
-                <span class="product-price">149 kr</span>
-                <button class="buy-button">Köp</button>
-            </div>
+            <h1>IQ PC</h1>
+            <h2>High quality and best prices</h2>
+            
         </div>
 
+        <div class="imgcontainer">
+            <a href="default.asp"><img src="Images/shopping_cart_checkout_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+        </div>
+
+        <div class="buttons">
+            <div class="next-btn" onclick="document.location='http://127.0.0.1:5500/Index3.html'"> Next </div>
+
+        </div>
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="/images/download1.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">2000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download2.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">7000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download3.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">3000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download4.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">10000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download5.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">4000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download6.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">5000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download7.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">15000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/images/download8.jpg" alt="PC" class="product-image">
+                <h3>PC</h3>
+                <span class="product-price">9000kr</span>
+                <button class="buy-button">Buy</button>
+            </div>
 
 
-    </div>
+        </div>
+        <div class="support">
+            <footer>
+                <p>&copy; 2025 IQ PC All rights reserved. | High quality computers at the best prices</p>
+                <p style="margin-top: 10px;"> for PC enthusiasts</p> <i> Our dedicated support team is available to
+                    assist you with any questions or issues you may have </i> <br>
+                <i>+1 (800) PC-SUPPORT support@iqpc.com</i>
+            </footer>
+        </div>
 </body>
 
 </html>
